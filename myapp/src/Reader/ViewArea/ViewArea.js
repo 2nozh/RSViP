@@ -1,18 +1,30 @@
 import './ViewArea.css'
 import React, { useState, useEffect } from 'react';
 
-export default function ViewArea() {
+function ViewArea() {
     var words=["word1","word2","word3"];
-    var word = words[1];
+    var wordNumber=0;
+    var word = words[wordNumber];
+
+    const[count,setCount] =useState(0);
+    const incrementCount = () => setCount(count+1);
+    
+    useEffect(()=>{
+        document.title = `count is ${count}`
+    });
     return(
-        <div className="ViewArea">
+        <div  className="ViewArea">
         {word}
-        <p>старт/стоп</p>
-        <Timer/>
+        <p>старт/стоп</p>   
+        <p>count is {count}</p>
+    <button onClick={incrementCount}>BUTTON</button>     
     </div>
     )
-}
- function Timer() {
+} 
+export default ViewArea
+
+/* <Timer/>
+function Timer() {
   const [time, setTime] = useState(new Date());
 
   useEffect(() => {
@@ -24,4 +36,21 @@ export default function ViewArea() {
  }, []);
 
   return <p>The current time is: {time.toLocaleTimeString()}</p>;
+  
 }
+
+function clickEvent(e){
+console.log(e);
+setWord(words[0]);
+
+}
+
+function WordChange(){
+  const[wordNumber,setWord]=useState(null);
+  
+
+
+
+  
+  
+}*/

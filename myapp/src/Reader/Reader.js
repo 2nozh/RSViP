@@ -1,14 +1,11 @@
 import ViewArea from "./ViewArea/ViewArea";
-
+import Dropdown from "./Dropdown/Dropdown";
 
 export default () => (
   <div>
-      <div>
-        <h3>Выберите источник</h3>
-        <p>Путь до файла</p>
-        <p>Строка для url</p>
-        <p>кнопка Загрузить</p>
-      </div>
+    <div>
+      <Dropdown/>
+    </div>
     <hr/>
       <div>
         <h3>Смотри сюда</h3>
