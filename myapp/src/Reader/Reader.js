@@ -1,23 +1,19 @@
 import ViewArea from "./ViewArea/ViewArea";
 import Dropdown from "./Dropdown/Dropdown";
+import Settings from "./Settings/Settings";
+import './Reader.css'
 
 export default () => (
-  <div>
-    <div>
-      <Dropdown/>
+  <div className="Reader">  
+  <div className="Settings">
+    <div className="Upload">
+        <Dropdown/>
     </div>
-    <hr/>
-      <div>
+        <Settings/>
+    </div>
+    <div className="Read">
         <h3>Смотри сюда</h3>
         <ViewArea/>
-      </div>
-    <hr/>
-      <div>
-        <h3>Параметры</h3>
-        <p>масштаб</p>
-        <p>режим</p>
-        <p>скорость</p>
-        <p>применить</p>
-      </div>
+    </div>   
   </div>
 );

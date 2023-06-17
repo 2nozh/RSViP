@@ -53,7 +53,7 @@ html {
 }
 
 body{
-	@include font-size(1.6, 2.2);
+	@include font-size(1.6, 1.2);
 	margin:0;
 	padding:0;
 	font-family:$f-body;
@@ -62,7 +62,7 @@ body{
 
 .m-dropdown{
 	margin:50px auto;
-	width:300px;
+	width:200px;
 	display:block;
 	
     .e-download-button{
@@ -79,13 +79,13 @@ body{
 		font-family: $f-body;
 		z-index: 5;
 		display:block;
-		width:300px;
+		width:200px;
 		margin:0px auto;
 		background:#1b1b1b;
         &:hover{
 			cursor:pointer;
 			box-shadow:0 3px 6px rgba(0,0,0,0.2);
-			color:#669999;
+			color:#88a5ff;
         }
     }
 
@@ -103,18 +103,18 @@ body{
 		font-family: $f-body;
 		z-index: 5;
 		display:block;
-		width:300px;
+		width:200px;
 		margin:0 auto;
 		background:#1b1b1b;
 		
 		&:hover{
 			cursor:pointer;
 			box-shadow:0 3px 6px rgba(0,0,0,0.2);
-			color:#669999;
+			color:#88a5ff;
 			
 			.e-burger{
 				span{
-					background:#669999;
+					background:#88a5ff;
 				}
 			}
 		}
@@ -192,12 +192,12 @@ body{
 
 			border-bottom-left-radius: 0px;
 			border-bottom-right-radius: 0px;
-			color:#669999;
+			color:#88a5ff;
 
 
 			.e-burger {
 				span {
-					background:#669999;
+					background:#88a5ff;
 
 					&:first-child {
 						opacity: 0;
@@ -223,7 +223,7 @@ body{
         
 	}
 	.e-list{
-		@include border-radius(5px);
+		@include border-radius(3px);
 		box-shadow:0 3px 6px rgba(0,0,0,0.2);
 		position:relative;
 		width:100%;
@@ -249,12 +249,13 @@ body{
 
 			a{
 				@include transition(all .3s ease-in-out);
+				font-size: 2rem;
 				padding:15px;
 				float:left;
 				width:100%;
 				text-decoration:none;
 				color:#fff;
-				font-weight:600;
+				font-weight:10;
 				box-sizing:border-box;
 				
 				&:hover{

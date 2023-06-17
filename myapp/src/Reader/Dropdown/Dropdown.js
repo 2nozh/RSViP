@@ -28,6 +28,7 @@ export default Dropdown
 
 function slide(){
     console.log("sliding")
+    console.log($(".e-button").hasClass("open"))
     if ($(".e-button").hasClass("open")) {
             $(".e-list").slideUp(function() {
                 $(".e-button").removeClass("open");

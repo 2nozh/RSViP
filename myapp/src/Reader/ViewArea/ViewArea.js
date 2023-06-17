@@ -2,26 +2,59 @@ import './ViewArea.css'
 import React, { useState, useEffect } from 'react';
 
 function ViewArea() {
-    var words=["word1","word2","word3"];
+  //var fr = new FileReader();
+  var text = "This is sample text. And i'll try to read it!"
+  
+    //var words=["word1","word2","word3"];
+    var words = text.split(" ");
     var wordNumber=0;
     var word = words[wordNumber];
+    var textSize =words.length
 
     const[count,setCount] =useState(0);
-    const incrementCount = () => setCount(count+1);
+    const incrementCount = () => {
+      setCount(count+1);
+      if (count == textSize) setCount(0);
+    }
     
-    useEffect(()=>{
+   
+    
+    /*useEffect(()=>{
         document.title = `count is ${count}`
-    });
+    });*/
+    word =words[count];
+const start =()=>{
+  while(count<textSize){
+    console.log("next");
+    incrementCount();
+    sleep(1000);
+    //setTimeout(() => { incrementCount(); }, 1000).then(start());
+    /*const interval = setInterval(() => {
+      }, 1000)
+      incrementCount();*/
+  }
+      
+}
     return(
         <div  className="ViewArea">
         {word}
         <p>старт/стоп</p>   
         <p>count is {count}</p>
-    <button onClick={incrementCount}>BUTTON</button>     
+        <p>size is {textSize}</p>
+        <button onClick={start}>start</button> 
+        <button onClick={incrementCount}>BUTTON</button>     
     </div>
     )
 } 
 export default ViewArea
+
+function sleep(milliseconds) {
+  const date = Date.now();
+  let currentDate = null;
+  do {
+    currentDate = Date.now();
+  } while (currentDate - date < milliseconds);
+}
 
 /* <Timer/>
 function Timer() {

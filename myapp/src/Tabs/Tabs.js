@@ -13,7 +13,6 @@ export default () => (
     </TabList>
 
     <TabPanel>
-      <h2>RSVP Reader</h2>
       <Reader/>
     </TabPanel>
     <TabPanel>
