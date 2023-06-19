@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 
 function ViewArea() {
   //var fr = new FileReader();
-  var text = "This is sample text. And i'll try to read it!"
+  var text = "другое Слово This is sample text. And i'll try to read it!"
   
     //var words=["word1","word2","word3"];
     var words = text.split(" ");
@@ -27,7 +27,6 @@ const start =()=>{
   while(count<5){
     console.log("next");
     incrementCount();
-    sleep(1000);
     //setTimeout(() => { incrementCount(); }, 1000).then(start());
     /*const interval = setInterval(() => {
       }, 1000)
@@ -38,11 +37,9 @@ const start =()=>{
     return(
         <div  className="ViewArea">
         {word}
-        <p>старт/стоп</p>   
-        <p>count is {count}</p>
-        <p>size is {textSize}</p>
-        <button onClick={start}>start</button> 
-        <button onClick={incrementCount}>BUTTON</button>     
+        <br></br>
+        <button onClick={start}>продолжить</button> 
+          
     </div>
     )
 } 
@@ -56,7 +53,7 @@ function sleep(milliseconds) {
   } while (currentDate - date < milliseconds);
 }
 
-/* <Timer/>
+/* <Timer/><button onClick={incrementCount}>BUTTON</button>   
 function Timer() {
   const [time, setTime] = useState(new Date());
 

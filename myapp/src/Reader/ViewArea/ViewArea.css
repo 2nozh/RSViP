@@ -1,4 +1,28 @@
 .ViewArea{
     width: 100%;
+    margin-top: 20%;
+    font-size: 7rem;
 
 }
+button {
+    margin-top: 10%;
+    padding: 10px;
+    text-align: center;
+    font-size: 5rem;
+    color: white;
+    background: rgba(0, 0, 0, 0.4);
+    width: auto;
+    height: auto;
+    border: 2px solid #315cfd;
+    border-radius: 30px;
+    transition: all 0.3s;
+    cursor: pointer;
+    font-weight: 550;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  button:hover {
+    background: #315cfd;
+    color: white;
+    font-size: 6rem;
+  }
