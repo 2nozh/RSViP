@@ -1,0 +1,15 @@
+*{
+color: aliceblue;
+   
+}
+.Step{
+    color: aqua;
+    &:before{
+        color: blue;
+
+    }
+
+    &::after{
+        color: cadetblue;
+    }
+}

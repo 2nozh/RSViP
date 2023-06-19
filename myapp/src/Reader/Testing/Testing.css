@@ -5,3 +5,24 @@ img{
   margin-left: 25%;
 	width: 50%;
   }
+.Horisontal{
+    display: flex;
+    margin-left: 10%;
+}
+
+.Dropdown{
+    position: absolute;
+    top: 10%;
+    margin: 0.5%;
+    min-width: 10px;
+    
+  }
+
+  .Stepper{
+    margin-top: 10%;
+    width: 50%;
+    margin-left: 30%;
+  }
+
+ 
+
