@@ -3,17 +3,18 @@ body {
 }
 
 .Reader {
-    display:flex;
+    display: flex;
 }
 
 .Read {
-    width: 70%;
+    width: 100%;
     margin: 1%;
 }
 
 .Settings {
-    position: relative;
+    position: absolute;
     top: 0%;
-    width: 15%;
     margin: 1%;
+    min-width: 10px;
+    width: 20%;
 }

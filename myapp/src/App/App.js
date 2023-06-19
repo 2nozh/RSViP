@@ -1,11 +1,11 @@
 import './App.css';
-import Tabs from '../Tabs/Tabs';
+import ContentTabs from '../Tabs/ContentTabs';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <div><Tabs/></div>
+        <div><ContentTabs/></div>
       </header>
     </div>
   );

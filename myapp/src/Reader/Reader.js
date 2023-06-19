@@ -9,11 +9,9 @@ export default () => (
     <div className="Upload">
         <Dropdown/>
     </div>
-        <Settings/>
-    </div>
-    <div className="Read">
-        <h3>Смотри сюда</h3>
-        <ViewArea/>
-    </div>   
+  </div>
+  <div className="Read">
+      <ViewArea/>
+  </div>   
   </div>
 );

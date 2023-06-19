@@ -24,7 +24,7 @@ function ViewArea() {
     });*/
     word =words[count];
 const start =()=>{
-  while(count<textSize){
+  while(count<5){
     console.log("next");
     incrementCount();
     sleep(1000);

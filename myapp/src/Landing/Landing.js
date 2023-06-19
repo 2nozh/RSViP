@@ -1,13 +1,13 @@
-import './Dropdown.scss'
+import './Landing.scss'
 import $ from 'jquery';
 
-function Dropdown() {
+function Landing() {
     console.log("starting");
     console.log($(".e-button").hasClass("open"))
     return (
         <div className="m-dropdown">
             <div onClick={slide}  className="e-button open">
-                _dfgbdzxgbdxz
+                Источник
                 <div  className="e-burger">
                     <span></span>
                     <span></span>
@@ -16,15 +16,15 @@ function Dropdown() {
                 </div>
             </div>
             <ul className="e-list">
-                <li><a href="#">Загрузить файл</a></li>
-                <li><a href="#">Режим</a></li>
-                <li><a href="#">Скорость</a></li>
-                <li><a href="#">Масштаб</a></li>
+                <li><a href="#">Путь до файла</a></li>
+                <li><a href="#">Строка для url</a></li>
             </ul>
+            <h2></h2>
+            <button className='e-download-button'>Загрузить</button>
         </div>
     )
 }
-export default Dropdown
+export default Landing
 
 function slide(){
     console.log("sliding")
@@ -42,4 +42,3 @@ function slide(){
             }, 200);
         }
 }
-
