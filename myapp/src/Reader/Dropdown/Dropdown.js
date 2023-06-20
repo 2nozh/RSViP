@@ -7,7 +7,7 @@ function Dropdown() {
     return (
         <div className="m-dropdown">
             <div onClick={slide}  className="e-button open">
-                _dfgbdzxgbdxz
+                
                 <div  className="e-burger">
                     <span></span>
                     <span></span>

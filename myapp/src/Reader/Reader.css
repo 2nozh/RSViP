@@ -13,8 +13,8 @@ body {
 
 .Settings {
     position: absolute;
-    top: 0%;
-    margin: 1%;
+    top: 10%;
+    margin: 0.5%;
     min-width: 10px;
     width: 20%;
 }
